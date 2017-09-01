@@ -68,39 +68,3 @@ $(document).ready(function(){
 });	
 
 
-
-
-/*var screenText = $("#calc_screen").text();
-	$(".buttons").click(function(){
-		var buttonText = $(this).text();
-		if(screenText = ''){
-			$("#calc_screen").text(function(){	
-			return buttonText;
-		});
-		}else{
-			return buttonText;
-	}
-});
-});
-
-
-
-$(document).ready(function(){
-	$("#clear").click(function(){
-		var display = ""
-		$("#calc_screen").text(function(){
-			return display;
-		})
-	})
-})
-
-$(document).ready(function(){
-	$("#clear_all").click(function(){
-		var display = ""
-		$('#calc_screen').text(function(){
-			return display;
-		})
-	})
-})
-
-		*/

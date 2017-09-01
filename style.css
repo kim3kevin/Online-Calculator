@@ -1,0 +1,87 @@
+*{
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.calc_body{
+    width : 317px;
+    height: 460px;
+    margin : 10px auto;
+    padding : 5px; 
+    background-color: #999;
+    border : 3px solid black; 
+    border-radius : 10px;
+    align-items : center;
+}
+    
+#calc_screen{
+    height : 90px; 
+    width : 300px;
+    margin-bottom : 5px;
+    padding-right : 9px;
+    background : -webkit-gradient(linear,left top, left bottom, from(#EDEDED), to(#DCDCDC));
+    background : -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+    text-align : right;
+    font-size :70px;
+    color : black;
+    border-radius: 15px;
+    overflow-x:scroll;
+
+}
+
+.numbers{
+    margin : 0px;
+    display: flex;
+    flex-wrap : wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left :40px;
+    padding-right: 40px;
+    padding-top : 10px;
+}
+
+
+
+.numbers div{
+	text-decoration : none;
+    display : block;
+    width :50px;
+    height : 50px;
+    float : left;
+    padding : 2px;
+    margin :5px 6px;
+    text-align : center;
+    font-size : 39px;
+    background : -webkit-gradient(linear,left top, left bottom, from(#EDEDED), to(#DCDCDC));
+    background : -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+    border-radius : 10px;
+    cursor : pointer;
+}
+
+.operators {
+	display : flex;
+	flex-wrap : wrap;
+	padding-top : 20px;
+
+	justify-content: space-evenly;
+}
+.operators div{
+    text-decoration : none;
+    display : block;
+    width :45px;
+    height : 45px;
+    float : left;
+    padding : 2px;
+    margin :5px 6px;
+    text-align : center;
+    font-size : 39px;
+    background : -webkit-gradient(linear,left top, left bottom, from(#EDEDED), to(#DCDCDC));
+    background : -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+    border-radius : 10px;
+    cursor : pointer;
+}
+
+#clear_all {
+	background : orange;
+}

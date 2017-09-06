@@ -13,9 +13,10 @@
     border : 3px solid black; 
     border-radius : 10px;
     align-items : center;
+    background: linear-gradient(180deg,#979393,#979393 90%,#615d5d);
 }
     
-#calc_screen{
+.calc_screen{
     height : 90px; 
     width : 300px;
     margin-bottom : 5px;
@@ -25,7 +26,7 @@
     text-align : right;
     font-size :70px;
     color : black;
-    border-radius: 15px;
+    border-radius: 5px;
     overflow-x:scroll;
 
 }
@@ -43,7 +44,7 @@
 
 
 
-.numbers div{
+.buttons{
 	text-decoration : none;
     display : block;
     width :50px;
@@ -63,9 +64,14 @@
 	display : flex;
 	flex-wrap : wrap;
 	padding-top : 20px;
-
 	justify-content: space-evenly;
 }
+
+.operators .radical{
+    padding-top : 7px;
+    font-size : 25px;
+}
+
 .operators div{
     text-decoration : none;
     display : block;
@@ -73,33 +79,47 @@
     height : 45px;
     float : left;
     padding : 2px;
-    margin :5px 6px;
+    margin : 5px 6px;
     text-align : center;
     font-size : 39px;
     background : -webkit-gradient(linear,left top, left bottom, from(#EDEDED), to(#827979));
     background : -moz-linear-gradient(top, #EDEDED, #827979);
     border-radius : 10px;
     cursor : pointer;
+
 }
 
 #clear_all {
-	background : orange;
+	background : linear-gradient(180deg,rgba(255, 193 ,1 ,0.76),orange 60%,#ab530f);
+}
+
+
+
+#clear_all:hover {
+	background : #ff9f00;
+}
+
+.operators .negative, .modulo{
+	font-size : 35px;
+}
+
+.buttons:hover {
+    background : darkgrey;   
 }
 
 .operators div:hover{
-    background: darkgrey;	
-   
+    background : darkgrey; 
+
 }
 
-.numbers div:hover {
-	background: darkgrey;	
-  
+.buttons:active{
+    border : 1px #bbbbd5 solid;
 }
 
-#clear_all:hover {
-	background : #ffe500;
+.operators div:active{
+    border : 1px #bbbbd5 solid
 }
 
-#negative, #root, #modulus{
-	font-size : 35px;
+#clear_all:active{
+    border : 1px rgba(221, 191, 67, 0.79) solid;
 }
